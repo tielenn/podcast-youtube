@@ -20,7 +20,7 @@ body {
     height: 100%;
     z-index: 1;
     overflow-x: hidden;
-    background-color: #E57373;
+    background-color: #2196F3;
     padding-top: 20px;
 }
 
@@ -30,18 +30,13 @@ body {
 
 }
 
-input {
+#question-input {
     width: 80%;
-    border: #E57373 solid 1px;
+    border: #2196F3 solid 1px;
     padding: 10px;
     margin-top: 5px;
 }
 
-#submit-btn {
-    background-color: #E57373;
-    border: none;
-    padding: 10px;
-    color: #eee;
-    margin-bottom: 5px;
-    width: 20%;
+#submit {
+    padding: 10px 20px;
 }

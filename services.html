@@ -6,34 +6,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <div class="container">
         <h2>Ask your question</h2>
         <hr>
     </div>
-
     <br>
     <div class="side">
         <h2>Podcast by Mishanya</h2>
     </div>
     <div class="container">
         <form id="form">
-            <label for="form">What you want to know?</label>
-            <br>
-            <input id="input" type="text">
-            <br>
-            <br>
-            <button id="submit-btn">Send</button>
+            <label for="question-input">What you want to know?</label>
+            <input id="question-input" type="text" required minlength="10" maxlength="256">
+            <button id="submit" type="submit" disabled>Send</button>
         </form>
     </div>
-    <br>
-    <br>
-    <br>
     <br>
     <div class="container">
         <h2>Your questions</h2>
         <hr>
     </div>
+
+    <div class="list"></div>
 
 
 </body>
