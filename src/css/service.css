@@ -6,10 +6,8 @@ body {
 }
 
 .container {
-
     margin-left: 250px;
     padding: 0 10px;
-
 }
 
 .side {
@@ -18,25 +16,118 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    z-index: 1;
     overflow-x: hidden;
     background-color: #2196F3;
     padding-top: 20px;
+    z-index: -100;
 }
 
 .side h2 {
     text-align: center;
     color: #eee;
-
 }
 
 #question-input {
-    width: 80%;
+    display: block;
+    width: 70%;
     border: #2196F3 solid 1px;
     padding: 10px;
     margin-top: 5px;
+    margin-bottom: 10px;
 }
 
 #submit {
     padding: 10px 20px;
+}
+
+.ask {
+    padding-bottom: 20px;
+}
+
+hr {
+    margin-left: 0;
+    width: 80%;
+}
+
+.float-btn {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    border: none;
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.modal-window, .modal-overlay {
+    opacity: 1;
+    z-index: 1000;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.modal-window {
+    background-color: #fefefe;
+    width: 40%;
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    border-radius: 5px;
+}
+
+.modal-window h1 {
+    text-align: center;
+    font-family: "Calibri Light", serif;
+}
+
+.form-container {
+    padding: 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.cancel-btn {
+    width: 100%;
+    padding: 14px 20px;
+    background-color: #f44336;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+}
+
+.button-auth {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button-auth:hover {
+    opacity: 0.8;
+}
+
+.cancel-btn:hover {
+    opacity: 0.8;
+}
+
+.button-auth:disabled {
+    background-color: #888888;
+    opacity: 1;
+    cursor: auto;
 }
